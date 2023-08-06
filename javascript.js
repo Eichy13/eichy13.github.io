@@ -127,6 +127,4 @@ function RevealText(text)
     text.classList.toggle("HideText");
 }
 
-
-ShowPage(PreparePage);
-
+ShowPage(HomePage); //Starts the website
