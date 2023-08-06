@@ -485,7 +485,7 @@ th,td {
     text-align: center;
 }
 
-#QRCode>p {
+#QRCodeText {
     width: 100%;
     color: white;
     font-size: 2rem;
