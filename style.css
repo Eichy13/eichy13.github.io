@@ -1,0 +1,673 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin;
+}
+
+body {
+    width: 100%;
+    height: 10em;
+    box-sizing: border-box;
+    background-color: #2E2E2E;
+}
+
+.title {
+    justify-self: left; /* horizontally centralised */
+    padding-top: 2%;
+    padding-left: 1%;
+}
+
+.heading {
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    padding: 15px;
+    background-color: #3e2906;
+    color: #f9f8eb;
+    align-items: center;
+}
+
+#LeftMenu {
+    background-color: #0A6259;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    z-index: 2;
+}
+
+#navi {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navi>h1 {
+    color: white;
+    transition: all ease-in-out;
+}
+
+#navi>h1:hover {
+    background-color: rgb(116, 102, 102);
+}
+
+#menuButton {
+    width: 90%;
+}
+
+#Home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#KindOfSkier {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Prepare {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#AboutSking {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+}
+
+#AboutSking>div >h2 {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#AboutSking>div {
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#AboutSking>p {
+    width: 65%;
+    align-self: center;
+    text-align: center;
+}
+
+#AboutSkingImage {
+    width: 100%;
+}
+
+#SkiTechnique {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+    justify-content: flex-end;
+}
+
+#SkiTechniqueText1 {
+    width: 65%;
+    justify-self: flex-start;
+    color: white;
+}
+
+#SkiTechniqueText1 >p {
+    font-size: 2rem;
+    width: 85%;
+    margin-top: 2%;
+    text-align: center;
+    margin-inline: 10%;
+}
+
+.SkiTechniqueButtons {
+    width: 50%;
+    text-align: center;
+    margin-inline: auto;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: #FFCE63;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.SkiTechniqueButtons:hover {
+    cursor: pointer;
+    background-color: #ffce63a1
+}
+
+.SkiTechniqueButtons >p {
+    font-size: 0.9rem;
+    color: #0A6259;
+    font-weight: 300;
+    margin: 1vh 3vw;
+}
+
+#SkiTechniqueText2 {
+    margin-right: 5%;
+    margin-top: 1%;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    height: 50vh;
+}
+
+#SkiTechniqueText2 >h2 {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#SkiTechniqueText2 >div {
+    margin-top: 2%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#SkiTechniqueImage {
+    width: 100%;
+    background-size: contain no-repeat;
+}
+
+#Location {
+    background-color: #757374;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Hotel {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+}
+
+#Hotel>div {
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 40%;
+    text-align: center;
+}
+
+#Hotel>div>div {
+    margin-top: 2%;
+    width: 100%;
+    height: 50%;
+}
+
+#Hotel>div>div>a>video {
+    width: 100%;
+}
+
+#Hotel>p {
+    margin-left: 3%;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#SkiMountain {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+}
+
+#SkiMountain>div >h2 {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#SkiMountain>div {
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#SkiMountain>p {
+    width: 65%;
+    align-self: center;
+    text-align: center;
+}
+
+#SkiMountainImage {
+    width: 100%;
+}
+
+#KindOfSkier {
+    background-color: white;
+} 
+
+#KindOfSkierImage {
+    background-image: url("images/SkiImage4.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#KindOfSkierImage>h2 {
+    text-align: center;
+    margin-bottom: 15%;
+    font-size: 8rem;
+}
+
+#Table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#Table>p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2%;
+}
+
+#Table>table {
+    margin: 1%;
+    background-color: transparent;
+    border: 1px solid #444;
+}
+
+#TableTitle {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid #444;
+    white-space: nowrap;
+}
+
+th,td {
+    border: 1px solid #444;
+    padding: 1%;
+}
+
+
+#Prepare>p {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 5rem;
+    color: #0A6259;
+}
+
+.HideText {
+    opacity: 0;
+}
+
+#Helmet {
+    background-color: #f9e4c3;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+}
+
+#HelmetButton:hover {
+    color: blue;
+}
+
+#HelmetButton >h2 {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#HelmetButton {
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#HelemtText {
+    transition: opacity 1s;
+    margin-inline: 3%;
+    width: 59%;
+    font-size: 2rem;
+    align-self: center;
+    text-align: center;
+}
+
+#Goggles {
+    background-color: #0A6259;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+}
+
+#GoggleButton:hover {
+    color: #3e2906;
+}
+
+#GoggleButton >h2 {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#GoggleButton {
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#GoggleText {
+    transition: opacity 1s;
+    margin-inline: 3%;
+    width: 59%;
+    font-size: 2rem;
+    align-self: center;
+    text-align: center;
+    color: white;
+}
+
+#SkisBoots {
+    background-color: #f9e4c3;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+}
+
+#SkisBootsButton:hover {
+    color: blue;
+}
+
+#SkisBootsButton >h2 {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#SkisBootsButton {
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#SkisBootsText {
+    transition: opacity 1s;
+    margin-inline: 3%;
+    width: 59%;
+    font-size: 2rem;
+    align-self: center;
+    text-align: center;
+    color: black;
+}
+
+#ColdCloths {
+    background-color: #0A6259;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+}
+
+#ColdClothsButton:hover {
+    color: #3e2906;
+}
+
+#ColdClothsButton >h2 {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#ColdClothsButton {
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ColdClothsText {
+    transition: opacity 1s;
+    margin-inline: 3%;
+    width: 59%;
+    font-size: 2rem;
+    align-self: center;
+    text-align: center;
+    color: white;
+}
+
+#SkiJacketPant {
+    background-color: #f9e4c3;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+}
+
+#SkiJacketPantButton:hover {
+    color: blue;
+}
+
+#SkiJacketPantButton >h2 {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#SkiJacketPantButton {
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#SkiJacketPantText {
+    transition: opacity 1s;
+    margin-inline: 3%;
+    width: 59%;
+    font-size: 2rem;
+    align-self: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px)
+{
+    
+}
+
+@media screen and (max-width: 540px)
+{   
+    #navi {
+        display: none;
+    }
+
+    #AboutSking>div >h2 {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    
+    #AboutSking>div {
+        margin-top: 1%;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }               
+    
+    #AboutSking>p {
+        width: 100%;
+        align-self: center;
+        text-align: center;
+    }
+    
+    #AboutSkingImage {
+        width: 100%;
+    }
+        
+    #SkiTechniqueText1 >p {
+        font-size: 1rem;
+        width: 85%;
+        margin-top: 2%;
+        text-align: center;
+        margin-inline: 10%;
+    }
+    
+    .SkiTechniqueButtons {
+        width: 80%;
+        text-align: center;
+        margin-inline: auto;
+        justify-content: center;
+        font-size: 1.5rem;
+        background-color: #FFCE63;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    .SkiTechniqueButtons >p {
+        font-size: 0.9rem;
+        color: #0A6259;
+        font-weight: 300;
+        margin: 1vh 3vw;
+    }
+    
+    #Hotel {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 3%;
+    }
+    
+    #Hotel>div {
+        margin-left: 5%;
+        margin-top: 1%;
+        width: 90%;
+        text-align: center;
+    }
+
+    #Hotel>p {
+        margin-left: 3%;
+        width: 90%;
+        align-self: center;
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    
+    #SkiMountain>div >h2 {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    
+    #SkiMountain>div {
+        margin-top: 1%;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #SkiMountain>p {
+        margin-top: 3%;
+        width: 100%;
+        align-self: center;
+        text-align: center;
+    }
+    
+    #SkiMountainImage {
+        width: 100%;
+    }
+
+    #HelmetButton {
+        margin-left: 5%;
+        margin-top: 1%;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #HelemtText {
+        transition: opacity 1s;
+        width: 100%;
+        font-size: 2rem;
+        align-self: center;
+        text-align: center;
+    }
+    
+    #GoggleButton {
+        margin-left: 5%;
+        margin-top: 1%;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #GoggleText {
+        transition: opacity 1s;
+        width: 100%;
+        font-size: 2rem;
+        align-self: center;
+        text-align: center;
+        color: white;
+    }
+      
+    #SkisBootsButton {
+        margin-left: 5%;
+        margin-top: 1%;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #SkisBootsText {
+        transition: opacity 1s;
+        width: 100%;
+        font-size: 2rem;
+        align-self: center;
+        text-align: center;
+        color: black;
+    }
+    
+    #ColdClothsButton {
+        margin-left: 5%;
+        margin-top: 1%;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #ColdClothsText {
+        transition: opacity 1s;
+        width: 100%;
+        font-size: 2rem;
+        align-self: center;
+        text-align: center;
+        color: white;
+    }
+    
+    #SkiJacketPantButton {
+        margin-left: 5%;
+        margin-top: 1%;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #SkiJacketPantText {
+        transition: opacity 1s;
+        width: 100%;
+        font-size: 2rem;
+        align-self: center;
+        text-align: center;
+    }
+}
