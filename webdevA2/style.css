@@ -477,6 +477,20 @@ th,td {
     text-align: center;
 }
 
+#QRCode {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#QRCode>p {
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+}
+
 @media screen and (max-width: 800px)
 {
     
